@@ -27,12 +27,13 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textFontWeight="700"
-            android:textSize="24sp" />
+            android:textSize="32sp" />
 
         <ImageView
             android:id="@+id/ivMoviePreview"
+            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="500dp"
             android:src="@drawable/moviepreview" />
 
     </LinearLayout>
