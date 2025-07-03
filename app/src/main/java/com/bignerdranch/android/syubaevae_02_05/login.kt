@@ -44,11 +44,12 @@ class login : AppCompatActivity() {
                     putString("password", password)
                     apply()
                 }
-            } else if (savedEmail == email && savedPassword == password){
-                startActivity(intent)
-            } else {
-                Snackbar.make(findViewById(android.R.id.content), "Неверный логин или пароль", Snackbar.LENGTH_SHORT).show()
-                return@setOnClickListener
+                if (savedEmail == email && savedPassword == password){
+                    startActivity(intent)
+                } else {
+                    Snackbar.make(findViewById(android.R.id.content), "Неверный логин или пароль", Snackbar.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
             }
 
             bRegister.setOnClickListener {
